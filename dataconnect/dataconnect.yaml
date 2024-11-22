@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "sevencircles-firebase-project"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "sevencircles-firebase-project-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
